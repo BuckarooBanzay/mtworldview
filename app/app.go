@@ -12,7 +12,7 @@ type App struct {
 	Config      *Config
 	Worldconfig map[string]string
 
-	Blockdb  db.DBAccessor
+	Blockdb db.DBAccessor
 
 	MapBlockAccessor *mapblockaccessor.MapBlockAccessor
 	Colormapping     *colormapping.ColorMapping

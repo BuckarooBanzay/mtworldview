@@ -8,7 +8,7 @@ import (
 
 //Public facing config
 type PublicConfig struct {
-	Version         string               `json:"version"`
+	Version string `json:"version"`
 }
 
 type ConfigHandler struct {

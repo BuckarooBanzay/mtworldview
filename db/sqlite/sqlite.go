@@ -8,7 +8,6 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
-
 type Sqlite3Accessor struct {
 	db       *sql.DB
 	filename string

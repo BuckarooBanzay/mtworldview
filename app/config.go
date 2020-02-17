@@ -8,11 +8,11 @@ import (
 )
 
 type Config struct {
-	ConfigVersion          int                     `json:"configversion"`
-	Port                   int                     `json:"port"`
-	Webdev                 bool                    `json:"webdev"`
-	EnablePrometheus bool `json:"enableprometheus"`
-	MapBlockAccessorCfg    *MapBlockAccessorConfig `json:"mapblockaccessor"`
+	ConfigVersion       int                     `json:"configversion"`
+	Port                int                     `json:"port"`
+	Webdev              bool                    `json:"webdev"`
+	EnablePrometheus    bool                    `json:"enableprometheus"`
+	MapBlockAccessorCfg *MapBlockAccessorConfig `json:"mapblockaccessor"`
 }
 
 type MapBlockAccessorConfig struct {
@@ -59,11 +59,11 @@ func ParseConfig(filename string) (*Config, error) {
 	}
 
 	cfg := Config{
-		ConfigVersion:          1,
-		Port:                   8080,
-		Webdev:                 false,
-		EnablePrometheus: true,
-		MapBlockAccessorCfg:	&mapblockaccessor,
+		ConfigVersion:       1,
+		Port:                8080,
+		Webdev:              false,
+		EnablePrometheus:    true,
+		MapBlockAccessorCfg: &mapblockaccessor,
 	}
 
 	info, err := os.Stat(filename)

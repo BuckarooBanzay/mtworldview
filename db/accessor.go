@@ -5,8 +5,8 @@ import (
 )
 
 type Block struct {
-	Pos   *coords.MapBlockCoords
-	Data  []byte
+	Pos  *coords.MapBlockCoords
+	Data []byte
 }
 
 type DBAccessor interface {
