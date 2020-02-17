@@ -1,9 +1,5 @@
-mapserver
+mtworldview
 world.mt
 output
 map.sqlite
-mapserver.tiles
-mapserver.sqlite
-mapserver.sqlite-journal
-mapserver.json
 debug.txt
