@@ -13,7 +13,7 @@ export function drawMapblock(scene, posx, posy, posz){
       return;
     }
 
-    var nodenameGeometriesMap = {}; // nodeName => [geo, geo, ...]
+    var nodenameGeometriesMap = {}; // nodeName => [matrix, matrix, ...]
 
 		for (var x=0; x<16; x++){
 			for (var y=0; y<16; y++){
