@@ -45,7 +45,11 @@ function init() {
 
   initColormapping().then(drawLoop);
 
-	renderer = new THREE.WebGLRenderer({ antialias: false });
+	renderer = new THREE.WebGLRenderer({
+		antialias: false,
+		precision: "lowp"
+	});
+
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	document.body.appendChild( renderer.domElement );
