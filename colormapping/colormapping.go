@@ -107,7 +107,7 @@ func (m *ColorMapping) LoadVFSColors(useLocal bool, filename string) (int, error
 }
 
 func NewColorMapping() *ColorMapping {
-	extendedpalette, err := NewPalette(vfs.FSMustByte(false, "/pics/unifieddyes_palette_extended.png"))
+	extendedpalette, err := NewPalette(vfs.FSMustByte(false, "/unifieddyes_palette_extended.png"))
 
 	if err != nil {
 		panic(err)
